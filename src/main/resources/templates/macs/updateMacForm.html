@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: header" />
+<body>
+<div class="container">
+  <div th:replace="fragments/bodyHeader :: bodyHeader"/>
+  <form th:object="${mac}" method="post">
+    <!-- id -->
+    <input type="hidden" th:field="*{id}" />
+    <div class="form-group">
+      <label th:for="comment">코멘트</label>
+      <input type="text" th:field="*{Comment}" class="form-control"
+             placeholder="코멘트를 입력하세요" />
+    </div>
+    <div class="form-group">
+      <label th:for="satisfyLevel">만족도</label>
+      <input type="number" th:field="*{SatisfyLevel}" class="form-control"
+             placeholder="활동에 대한 만족도를 입력하세요" />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <div th:replace="fragments/footer :: footer" />
+</div> <!-- /container -->
+</body>
+</html>
