@@ -1,10 +1,7 @@
 package MyfirstProject.ForComment.web;
 
 import MyfirstProject.ForComment.Domain.Act;
-import MyfirstProject.ForComment.Domain.GoodStatus;
-import MyfirstProject.ForComment.Domain.Member;
 import MyfirstProject.ForComment.Service.ActService;
-import MyfirstProject.ForComment.Service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

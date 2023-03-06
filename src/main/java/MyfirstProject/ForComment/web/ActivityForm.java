@@ -1,7 +1,5 @@
 package MyfirstProject.ForComment.web;
 
-import MyfirstProject.ForComment.Domain.GoodStatus;
-
 import javax.validation.constraints.NotEmpty;
 
 public class ActivityForm {
